@@ -1,7 +1,6 @@
 package sk.rudo.evidenciavydavkov.view;
 
 import com.toedter.calendar.JDateChooser;
-import net.sourceforge.jdatepicker.JDatePicker;
 import sk.rudo.evidenciavydavkov.model.Kategoria;
 import sk.rudo.evidenciavydavkov.model.Vydavok;
 import sk.rudo.evidenciavydavkov.service.NakladService;
@@ -167,7 +166,7 @@ public class GUI {
         JButton btnNovy = new JButton("Nový");
         btnNovy.setBounds(50, 240, 80, 20);
         panel.add(btnNovy);
-        btnNovy.addActionListener(new ActionListener() { // sluzi na "odchytenie" cize spracovanie zatlacenia tlacidla
+        btnNovy.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFrame frame1 = new JFrame();
                 JDialog dialog = new JDialog(frame1,"Zadaj nový výdavok",true);
